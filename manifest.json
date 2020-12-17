@@ -1,12 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "Focus", 
+    "name": "IconsPic", 
     "version": "1.0",
-    "description": "prevents YouTube videos from displaying",
-    "content_scripts": [
-        {
-            "matches": ["https://www.youtube.com/*"],
-            "js": ["./main.js"]
-        }
-    ]
+    "description": "Compresses and resizes favcons, icons, and logos to create a faster and more seamless web experience",
+    "content_scripts": [ {
+        "matches": ["http://*/*"],
+        "js": ["./main.js"]
+      } ]
 }
