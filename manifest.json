@@ -2,11 +2,21 @@
     "manifest_version": 2,
     "name": "IconsPic", 
     "version": "1.0",
-    "description": "Compresses and resizes favcons, icons, and logos to create a faster and more seamless web experience",
+    "description": "Compresses and resizes favcons, icons, and logos to create a faster and more seamless browsing experience",
+    "browser_action": {
+        "default_icon": "assets/108773x128.png",
+        "popup": "Popup.html"  
+      },
+    "icons": { 
+      "16": "assets/108773x16.png",
+      "48": "/assets/108773x48.png",
+      "128": "/assets/108773x128.png" 
+    },
     "permissions": [
         "clipboardRead",
         "clipboardWrite",
-        "downloads"
+        "downloads",
+        "bookmarks"
     ],
     "content_scripts": [ {
         "matches": ["*://*/*"],
